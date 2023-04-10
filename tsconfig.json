@@ -1,4 +1,19 @@
 {
-  "compilerOptions": {},
+  "compilerOptions": {
+    "strict": false,
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@assets/*": ["./assets/*"],
+      "@components/*": ["./components/*"],
+      "@config/*": ["./config/*"],
+      "@routes/*": ["./routes/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@screens/*": ["./screens/*"],
+      "@services/*": ["./services/*"],
+      "@styles/*": ["./styles/*"],
+      "@utils/*": ["./utils/*"],
+    }
+  },
   "extends": "expo/tsconfig.base"
 }

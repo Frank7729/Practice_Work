@@ -7,10 +7,11 @@ const Button = ({
   backgroundColor,
   title,
   color,
-  images,
   widthI,
   heightI,
+  images,
 }) => {
+  console.log(`Ruta de la imagen: ../assets/img_${images}.png`);
   return (
     <Container>
       <TouchableOpacity
@@ -32,7 +33,7 @@ const Button = ({
         }}
       >
         <Image
-          source={require(`../assets/img_${images}.png`)}
+          source={{ uri: "../assets/img_" + images + ".png" }}
           style={{
             width: widthI,
             height: heightI,
